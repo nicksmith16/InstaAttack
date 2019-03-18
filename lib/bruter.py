@@ -161,7 +161,7 @@ class Bruter(object):
         while self.is_alive and not self.is_found:
 
             if last_attempt == self.password_manager.attempts and self.password_manager.attempts:
-                sleep(1.5)
+                sleep(0.1)
                 continue
 
             for browser in self.browsers:
